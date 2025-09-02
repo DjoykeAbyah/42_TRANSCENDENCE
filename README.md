@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="demo_part_1.gif" alt="Demo" width="600"/>
+</div>
+
 # Transcendence
 
 A full‑stack TypeScript project that delivers a browser‑based arcade experience with multiple game modes and real‑time interactions. It includes a Fastify backend with a database via Prisma and a front‑end that renders and controls game modes such as Pong and Snake. End‑to‑end tests are provided with Playwright.
