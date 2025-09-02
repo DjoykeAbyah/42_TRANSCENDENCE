@@ -61,6 +61,10 @@ Check out the [Original repository](https://github.com/akrepkov/transcendence) a
 - Testing: Playwright (@playwright/test)
 - Package manager: npm
 
+<div align="center">
+  <img src="demo_part_3.gif" alt="Demo" width="600"/>
+</div>
+
 ## Frontend
 
 - Renders the landing page and handles navigation to each game mode.
