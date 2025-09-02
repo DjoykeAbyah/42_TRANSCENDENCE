@@ -1,6 +1,6 @@
-<p align="center">
-  <video src="demo.mp4" controls width="600"></video><br>
-</p>
+<div align="center">
+  <img src="demo_part_1.gif" alt="Demo"/>
+</div>
 
 # Transcendence
 
