@@ -15,6 +15,11 @@ A full‑stack TypeScript project that delivers a browser‑based arcade experie
 Check out the [Original repository](https://github.com/akrepkov/transcendence) and [kanban board](https://github.com/users/akrepkov/projects/1) to get a glimpse into how we managed the project.
 
 
+
+<div align="center">
+  <img src="demo_part_2.gif" alt="Demo" width="600"/>
+</div>
+
 ## Overview
 
 - Frontend
