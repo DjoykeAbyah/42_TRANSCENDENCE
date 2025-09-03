@@ -11,7 +11,7 @@ import fs from 'fs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
-const port = 3000; //TODO do we need to do something with port?
+const port = 3000;
 const PINGINTERVAL = 15000;
 
 let isLoggerEnabled = true;

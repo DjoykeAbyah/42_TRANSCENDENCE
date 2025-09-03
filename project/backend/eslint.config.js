@@ -23,7 +23,6 @@ export default defineConfig([
     extends: ['js/recommended'],
 
     // Defines custom rules for the project, if this isn't here the prettier errors will not show up, nor will the code be formatted
-    // TODO enforce it
     // not enforced for now, so not to many diffs when merging
 
     rules: {
