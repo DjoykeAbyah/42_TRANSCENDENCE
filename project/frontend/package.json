@@ -1,0 +1,31 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint . --ignore-pattern 'src/unit-tests/*'",
+    "lint:fix": "eslint . --fix --ignore-pattern 'src/unit-tests/*'",
+    "start": "concurrently \"tsc --watch --preserveWatchOutput\" \"npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch\"",
+    "production": "tsc &&  npx tailwindcss -i ./src/input.css -o ./src/output.css --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@eslint/css": "^0.7.0",
+    "@eslint/js": "^9.26.0",
+    "@playwright/test": "^1.54.1",
+    "@types/node": "^24.0.14",
+    "eslint": "^9.26.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.4.0",
+    "globals": "^16.1.0",
+    "prettier": "^3.5.3",
+    "typescript-eslint": "^8.32.1"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.11"
+  }
+}

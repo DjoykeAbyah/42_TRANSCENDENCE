@@ -1,0 +1,53 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  userId    Int      @id @default(autoincrement())
+  username  String   @unique
+  email     String   @unique
+  avatar    String?
+  pong     	Pong[]
+  snake		Snake[]
+  pongWins       Int       @default(0)
+  pongLosses     Int       @default(0)
+  snakeWins      Int      @default(0)
+  snakeLosses    Int      @default(0)
+  tournamentWins  Int     @default(0)
+  createdAt DateTime @default(now())
+  password  String
+  friends   User[]   @relation("UserFriends")
+  friendsOf User[]   @relation("UserFriends")
+}
+
+model Pong {
+  gameId       Int      @id @default(autoincrement())
+  player1Name	String
+  player2Name	String
+  winnerName  String
+  player1Score Int
+  player2Score Int
+  createdAt    DateTime @default(now())
+  users 		   User[]
+}
+
+model Snake {
+  gameId       Int      @id @default(autoincrement())
+  player1Name    String
+  player2Name    String
+  winnerName     String
+  player1Score Int
+  player2Score Int
+  createdAt    DateTime @default(now())
+  users 		   User[]
+}
+
+model Leaderboard {
+  userId Int @id
+  wins   Int
+}
